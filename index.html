@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCT Stopwatch</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="stopwatch-container">
+        <div class="brand-header">SkillCraft</div>
+        <h1 class="app-title">SCT Stopwatch ✨</h1>
+
+        <div class="display-shield">
+            <div class="time-display" id="display">00:00:00.<span class="centiseconds-span">00</span></div>
+        </div>
+
+        <div class="controls-row">
+            <button class="btn btn-start" id="startBtn"><i class="fa-solid fa-play"></i> Start</button>
+            <button class="btn btn-pause" id="pauseBtn"><i class="fa-solid fa-pause"></i> Pause</button>
+            <button class="btn btn-lap" id="lapBtn" disabled><i class="fa-solid fa-stopwatch"></i> Lap</button>
+            <button class="btn btn-reset" id="resetBtn"><i class="fa-solid fa-rotate-left"></i> Reset</button>
+        </div>
+
+        <div class="laps-container-box" id="lapsContainer">
+            <div class="laps-header-row">
+                <span class="laps-title">History Logs</span>
+                <button class="btn-clear-laps" id="clearLapsBtn">
+                    <i class="fa-solid fa-trash-can"></i> Delete All
+                </button>
+            </div>
+            <div class="laps-box" id="lapsBox">
+                </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
